@@ -1,97 +1,129 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 🌸 Flower Store — React Native Coding Challenge
 
-# Getting Started
+<p align="center">
+  <img src="./icon.png" alt="App Icon" width="150" />
+</p>
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+A visually polished React Native app that blends smooth navigation, biometric security, and offline product browsing — built for speed, clarity, and real-world usability.
 
-## Step 1: Start Metro
+---
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## 🚀 Getting Started
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+This project was bootstrapped using [**React Native CLI**](https://github.com/react-native-community/cli).
+Before running the app, make sure you've completed the [environment setup guide](https://reactnative.dev/docs/set-up-your-environment).
 
-```sh
-# Using npm
+---
+
+### 1️⃣ Start Metro
+
+Metro is the JavaScript bundler for React Native.
+To start it, run:
+
+```bash
 npm start
-
-# OR using Yarn
+# or
 yarn start
 ```
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### 2️⃣ Build & Run the App
 
-### Android
+#### ✅ Android
 
-```sh
-# Using npm
+```bash
 npm run android
-
-# OR using Yarn
+# or
 yarn android
 ```
 
-### iOS
+#### ✅ iOS (macOS only)
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+Make sure CocoaPods are installed:
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
+```bash
 bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
 bundle exec pod install
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+Then run:
 
-```sh
-# Using npm
+```bash
 npm run ios
-
-# OR using Yarn
+# or
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## ✅ Setup & How to Run
 
-## Step 3: Modify your app
+```bash
+npm install
+npx react-native run-android
+```
 
-Now that you have successfully run the app, let's make changes!
+---
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## 🛍️ Chosen Category
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+**Specific Category Screen:** `fragrances`
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+---
 
-## Congratulations! :tada:
+## 👑 Superadmin User
 
-You've successfully run and modified your React Native App. :partying_face:
+**Username:** `admin`
+**Password:** `admin123`
 
-### Now what?
+> Superadmin users can delete products from the **All Products** screen.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+---
 
-# Troubleshooting
+## ✨ Features
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+* 🔐 Login screen with DummyJSON authentication
+* 🛒 All Products screen (delete option for superadmin)
+* 🏷️ Specific Category screen with pull-to-refresh
+* ⏱️ Auto-lock after 10 seconds of inactivity or background
+* 👆 Unlock via biometrics with manual fallback
+* 📶 Offline support using React Query + MMKV
 
-# Learn More
+---
 
-To learn more about React Native, take a look at the following resources:
+## ⚖️ Trade-offs
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+* Skipped dark mode and advanced error UI due to time constraints
+* Manual unlock is a placeholder (no password screen yet)
+* No unit tests or automated validation
+
+---
+
+## 💡 If I Had More Time
+
+* Add a proper password fallback screen for biometric failure
+* Improve error handling with toast messages
+* Add dark mode and theme switching
+* Write unit tests and integrate CI
+
+---
+
+## 🧰 Tech Stack
+
+* **React Native**
+* **TypeScript**
+* **React Navigation**
+* **React Query**
+* **MMKV**
+* **Redux Toolkit**
+* **react-native-biometrics**
+
+---
+
+## 🖌️ Design
+
+* Soft pink & lavender color palette for a feminine, modern look
+* Rounded product cards with subtle shadows
+* Clean and minimalist UI inspired by real-world e-commerce apps
+* Responsive layout that adapts smoothly across devices
