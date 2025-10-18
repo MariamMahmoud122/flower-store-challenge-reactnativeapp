@@ -1,7 +1,7 @@
 # 🌸 Flower Store — React Native Coding Challenge
 
 <p align="center">
-  <img src="./icon.png" alt="App Icon" width="150" />
+  <img src="./assets/icon.png" alt="App Icon" width="150" />
 </p>
 
 A visually polished React Native app that blends smooth navigation, biometric security, and offline product browsing — built for speed, clarity, and real-world usability.
